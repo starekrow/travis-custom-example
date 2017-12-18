@@ -12,7 +12,8 @@ class Example
 
 	function ReturnZero()
 	{
-		return 0;
+		// Hey look, I broke the build
+		return 7;
 	}
 
 	function ReturnString()
