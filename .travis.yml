@@ -15,4 +15,5 @@ install: true
 script: php tests/TestFramework.php run
 
 after_success:
+# No code style stuff for now
 #  - wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml

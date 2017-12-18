@@ -25,12 +25,12 @@ class ExampleTest extends TestFramework
 		return false;
 	}
 
-	function t32_TestNull()
+	function t32_GetNull()
 	{
 		$ex = new Example();
 		return $ex->ReturnNull() === null;
 	}
-	function t32_TestString()
+	function t32_GetString()
 	{
 		$ex = new Example();
 		$s = $ex->ReturnString();
