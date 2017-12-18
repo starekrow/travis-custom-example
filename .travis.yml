@@ -1,0 +1,18 @@
+language: php
+
+dist: trusty
+sudo: false
+
+php:
+  - 5.5
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+
+install: true
+
+script: php tests/TestFramework.php run
+
+after_success:
+#  - wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml
